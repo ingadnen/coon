@@ -1,0 +1,12 @@
+{
+  "hosting": {
+    "site": "univ-k",
+    "public": "./",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  
+}
+}

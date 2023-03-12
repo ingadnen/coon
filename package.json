@@ -1,0 +1,50 @@
+{
+    "name": "mirotalksfu",
+    "version": "1.0.4",
+    "description": "WebRTC SFU browser-based video calls",
+    "main": "Server.js",
+    "scripts": {
+        "start": "node app/src/Server.js",
+        "debug": "DEBUG='mediasoup*' node app/src/Server.js",
+        "compile": "npx browserify public/sfu/MediasoupClientCompile.js -o public/sfu/MediasoupClient.js",
+        "lint": "npx prettier --write ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/miroslavpejic85/mirotalksfu"
+    },
+    "keywords": [
+        "webrtc",
+        "socket.io",
+        "sfu",
+        "nodejs",
+        "video"
+    ],
+    "author": "Miroslav Pejic",
+    "license": "AGPL-3.0",
+    "dependencies": {
+        "@sentry/integrations": "7.41.0",
+        "@sentry/node": "7.41.0",
+        "body-parser": "1.20.2",
+        "colors": "1.4.0",
+        "compression": "1.7.4",
+        "cors": "2.8.5",
+        "crypto-js": "4.1.1",
+        "express": "^4.18.2",
+        "firebase-admin": "^11.5.0",
+        "httpolyglot": "0.1.2",
+        "mediasoup": "3.11.13",
+        "mediasoup-client": "3.6.82",
+        "ngrok": "^3.4.1",
+        "qs": "6.11.0",
+        "socket.io": "4.6.1",
+        "swagger-ui-express": "4.6.2",
+        "uuid": "9.0.0",
+        "xss": "^1.0.14",
+        "yamljs": "0.3.0"
+    },
+    "devDependencies": {
+        "node-fetch": "^2.6.7",
+        "prettier": "2.8.4"
+    }
+}
